@@ -1,0 +1,33 @@
+{
+  "name": "fetchurl",
+  "version": "0.1.0",
+  "description": "The best module ever.",
+  "main": "index",
+  "dependencies": {},
+  "devDependencies": {
+    "autod": "2",
+    "jshint": "2",
+    "istanbul": "0",
+    "coveralls": "2",
+    "mocha": "2",
+    "should": "6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/popomore/fetchurl"
+  },
+  "homepage": "https://github.com/popomore/fetchurl",
+  "author": "popomore <sakura9515@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "jshint .",
+    "test": "_mocha -R spec -t 20000",
+    "cov": "jshint . && istanbul cover node_modules/mocha/bin/_mocha -- -R spec -t 20000",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "autod": "autod -e test/fixtures -f ~ -w"
+  },
+  "engines": {
+    "iojs": ">= 1.0.0",
+    "node": ">= 0.12.0"
+  }
+}
