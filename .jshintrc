@@ -26,6 +26,7 @@
   "node": true,
   "mocha": true,
   "globals": {
-    "define": false
+    "define": false,
+    "fetch": true
   }
 }

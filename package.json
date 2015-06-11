@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "description": "The best module ever.",
   "main": "index",
-  "dependencies": {},
+  "dependencies": {
+    "mkdirp": "~0.5.1",
+    "urllib": "~2.3.8"
+  },
   "devDependencies": {
     "autod": "2",
-    "jshint": "2",
-    "istanbul": "0",
+    "co-mocha": "1",
     "coveralls": "2",
+    "istanbul-harmony": "0",
+    "jshint": "2",
+    "mm": "~1.1.0",
     "mocha": "2",
+    "rimraf": "~2.4.0",
     "should": "6"
   },
   "repository": {
@@ -21,8 +27,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "jshint .",
-    "test": "_mocha -R spec -t 20000",
-    "cov": "jshint . && istanbul cover node_modules/mocha/bin/_mocha -- -R spec -t 20000",
+    "test": "_mocha -r co-mocha -R spec -t 20000",
+    "cov": "jshint . && istanbul cover node_modules/mocha/bin/_mocha -- -r co-mocha -R spec -t 20000",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "autod": "autod -e test/fixtures -f ~ -w"
   },
