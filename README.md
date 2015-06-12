@@ -20,7 +20,6 @@ $ npm install fetchurl -g
 
 ```
 $ fetchurl https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superplus/js/min_super_ce213974.js
-var fetchurl = require('fetchurl');
 ```
 
 Also support file, create a file named `urls`
