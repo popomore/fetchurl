@@ -19,7 +19,21 @@ $ npm install fetchurl -g
 ## Usage
 
 ```
+$ fetchurl https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superplus/js/min_super_ce213974.js
 var fetchurl = require('fetchurl');
+```
+
+Also support file, create a file named `urls`
+
+```
+https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/tipsplus/js/min_tips_0e6bc704.js
+https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/activity/js/activity_start_52498d2c.js
+```
+
+Then you can run
+
+```
+$ fetchurl ./urls
 ```
 
 ## LICENSE
